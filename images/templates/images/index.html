@@ -1,7 +1,7 @@
 {% load render_table from django_tables2 %}
 {% load crispy_forms_tags %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -13,7 +13,7 @@
     </head>
     <body>
         <div class="container">
-            <h3 class="mt-3">django-images</h3>
+            <h3 class="mt-3"><a href="https://github.com/duplxey/django-images">django-images</a></h3>
             <div class="row">
                 <div class="col-12 col-md-8">
                     <div class="card">
@@ -32,7 +32,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Upload</h5>
                             <p class="card-text">Fill out the form and press submit in order to upload a new image.</p>
-                            <form action="/upload" method="post">
+                            <form action="/upload/" enctype="multipart/form-data" method="post">
                                 {% csrf_token %}
                                 {{ upload_form|crispy }}
                                 <input type="submit" class="btn btn-primary w-100" value="Upload">

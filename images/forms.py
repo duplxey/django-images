@@ -1,6 +1,13 @@
 from django import forms
 
+from images.models import Image
 
-class UploadForm(forms.Form):
-    title = forms.CharField(label='Title', max_length=100)
-    file = forms.ImageField(label='Image')
+
+class UploadForm(forms.ModelForm):
+
+    class Meta:
+        model = Image
+        fields = ['title', 'file']
+        labels = {
+            'file': "Image",
+        }
