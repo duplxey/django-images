@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'images.apps.ImagesConfig',
+    'django_tables2',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -112,10 +115,27 @@ USE_I18N = True
 USE_TZ = True
 
 
+# Tables
+# https://django-tables2.readthedocs.io/en/latest/index.html
+
+DJANGO_TABLES2_TEMPLATE = 'django_tables2/bootstrap4.html'
+
+
+# Forms
+# https://django-crispy-forms.readthedocs.io/en/latest/index.html
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'mediafiles'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
