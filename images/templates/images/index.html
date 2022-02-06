@@ -32,7 +32,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Upload</h5>
                             <p class="card-text">Fill out the form and press submit in order to upload a new image.</p>
-                            <form action="/upload/" enctype="multipart/form-data" method="post">
+                            <form action="{% url "images-upload" %}" enctype="multipart/form-data" method="post">
                                 {% csrf_token %}
                                 {{ upload_form|crispy }}
                                 <input type="submit" class="btn btn-primary w-100" value="Upload">
