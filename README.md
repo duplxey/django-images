@@ -24,4 +24,10 @@ A simple image hosting application written in Django.
     (venv)$ python manage.py migrate
     ```
 
-5. Voila!
+5. Run the server:
+
+    ```sh
+    (venv)$ python manage.py runserver
+    ```
+    
+ 6. Navigate to [http://localhost:8000/](http://localhost:8000/) in your favorite web browser.
