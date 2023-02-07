@@ -2,7 +2,7 @@
 
 A simple image hosting application written in Django.
 
-This project is primarily used to demonstrate how to [deploy](https://github.com/duplxey/django-images/edit/master/README.md#want-to-learn-how-to-deploy-this-project) Django to various platforms.
+This project is primarily used to demonstrate how to [deploy](https://github.com/duplxey/django-images#want-to-learn-how-to-deploy-this-project) Django to various platforms.
 
 ## Want to use this project?
 
