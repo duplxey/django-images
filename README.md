@@ -2,6 +2,8 @@
 
 A simple image hosting application written in Django.
 
+This project is primarily used to demonstrate how to [deploy](https://github.com/duplxey/django-images/edit/master/README.md#want-to-learn-how-to-deploy-this-project) Django to various platforms.
+
 ## Want to use this project?
 
 1. Fork/Clone
@@ -31,3 +33,12 @@ A simple image hosting application written in Django.
     ```
     
  6. Navigate to [http://localhost:8000/](http://localhost:8000/) in your favorite web browser.
+
+## Want to learn how to deploy this project?
+
+- [Google App Engine](https://testdriven.io/blog/django-gae/)
+- [AWS Elastic Beanstalk](https://testdriven.io/blog/django-elastic-beanstalk/)
+- [Render](https://testdriven.io/blog/django-render/)
+- [Fly.io](https://testdriven.io/blog/django-fly/)
+- [Dokku](https://testdriven.io/blog/django-dokku/)
+
